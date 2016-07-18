@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export SPARK_VERSION=1.5.1
+export SPARK_VERSION=1.3.1
 export SPARK_HOME=$HOME/vendors/spark-${SPARK_VERSION}
 
 export PIO_STORAGE_REPOSITORIES_METADATA_NAME=pio_meta
@@ -11,6 +11,11 @@ export PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_model
 export PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=PGSQL
 export PIO_STORAGE_SOURCES_PGSQL_TYPE=jdbc
 
-export PIO_STORAGE_SOURCES_PGSQL_USERNAME=ubohhtgqa21agg
+export PIO_STORAGE_SOURCES_PGSQL_USERNAME=your_username
 export PIO_STORAGE_SOURCES_PGSQL_URL=jdbc:postgresql://ec2-52-206-91-170.compute-1.amazonaws.com:5432/da7pvis3p9uqol?sslmode=require
-export PIO_STORAGE_SOURCES_PGSQL_PASSWORD=plnsgkaa7u4k88p0fjvvne54t7
+export PIO_STORAGE_SOURCES_PGSQL_PASSWORD=your_password
+
+export ENGINE_ID=your_engine_id
+export EVENT_SERVER_IP=your_eventserver_ip
+export EVENT_SERVER_PORT=5432
+export APP_ACCESS_KEY=your_app_accesskey

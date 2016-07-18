@@ -1,5 +1,5 @@
 
-web: PredictionIO/bin/pio deploy -- --ip pio-demo-engine.herokuapp.com --port ${PORT} --event-server-ip pio-demo-eventserver.herokuapp.com --event-server-port 5432
+web: bin/pio deploy --engine-instance-id #{ENGINE_ID} --port ${PORT} --event-server-ip #{EVENT_SERVER_IP} --event-server-port #{EVENT_SERVER_PORT} --accesskey ${APP_ACCESS_KEY}
 
-build: PredictionIO/bin/pio build
-train: PredictionIO/bin/pio train -- --driver-memory 4g
+build: bin/pio build
+train: bin/pio train -- --driver-memory 1g
